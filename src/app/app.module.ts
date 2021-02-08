@@ -4,11 +4,12 @@ import { StoreModule } from "@ngrx/store";
 import { counterReducer } from "./counter.reducer";
 import { MyCounterComponent } from "./my-counter/my-counter.component";
 import { AppComponent } from "./app.component";
+import { HighlightDirective } from "./directives/highlight.directive";
 
 // import { MyCounterComponent } from "./my-counter/my-counter.component";
 
 @NgModule({
-  declarations: [AppComponent, MyCounterComponent],
+  declarations: [AppComponent, MyCounterComponent, HighlightDirective],
   imports: [BrowserModule, StoreModule.forRoot({ count: counterReducer })],
   bootstrap: [AppComponent]
 })
